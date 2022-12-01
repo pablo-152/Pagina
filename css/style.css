@@ -214,6 +214,7 @@
         border-radius: 15px;
         border: transparent ;
         color: white;
+        cursor: pointer;
     }
     .btn1{
         background: #f46060;
