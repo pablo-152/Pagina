@@ -7,6 +7,14 @@
     <title>Pagina01</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    body{
+        background: url(imagenes/matricula_fondo1.png);
+        background-size:cover ;
+        width: 100%;
+        height:100vh;
+    }
+</style>
 <body>
     <div class="contenedor-general">
         <div class="contenedor-central">
