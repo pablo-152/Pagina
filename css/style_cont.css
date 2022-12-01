@@ -1,0 +1,31 @@
+body, html {
+    background: grey;
+    height: 100%;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: gray;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-box {
+    width: 60%;
+    padding: 40px 20px 500px 20px;
+    background: white;
+    text-align: center;
+}
+
+.form-tittle {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
