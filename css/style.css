@@ -1,42 +1,19 @@
 @font-face {
-    font-family: GothamRoundedBold;
-    src: url('GothamRoundedBold.ttf'); 
+    font-family: monserrat_bold;
+    src: url('../fonts/Montserrat-Bold.ttf'); 
 }
 @font-face {
-    font-family: GothamRounded-BoldItalic;
-    src: url('GothamRounded-BoldItalic.otf'); 
+    font-family: monserrat;
+    src: url('../fonts/Montserrat-Regular.ttf'); 
 }
-@font-face {
-    font-family: GothamRoundedBook;
-    src: url('GothamRoundedBook.ttf'); 
-}
-@font-face {
-    font-family: GothamRounded-BookItalic;
-    src: url('GothamRounded-BookItalic.otf'); 
-}
-@font-face {
-    font-family: GothamRoundedLight;
-    src: url('GothamRoundedLight.ttf'); 
-}
-@font-face {
-    font-family: GothamRounded-LightItalic;
-    src: url('GothamRounded-LightItalic.otf'); 
-}
-@font-face {
-    font-family: GothamRoundedMedium;
-    src: url('GothamRoundedMedium.ttf'); 
-}
-@font-face {
-    font-family: GothamRounded-MediumItalic;
-    src: url('GothamRounded-MediumItalic.otf'); 
-}
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    /*font-family: "Poppins", sans-serif;*/
+    font-family: monserrat;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -57,53 +34,7 @@
     background-color: transparent;
     position: relative;
 }
-    .icono{
-        width: 60px;
-        height: 60px;
-        margin: 20px; 
-    }
-
-    .icono > img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-prin{
-        width: 71%;
-        min-width: 450px;
-        margin: -70px auto ; 
-        z-index: 2;
-        left: 0;
-        right: 0;
-        position:absolute; 
-    }
-
-    #img-re{
-        width: 100%;
-    }
     
-    .img-borde-inf{
-        width: 50%;
-        position:absolute; 
-        bottom:0; 
-        z-index: 1;
-
-    }
-
-    #img-bo{
-        width: 100%;
-        
-    }
-
-    #img-su{
-        display: none;
-        
-    }
-    #img-bo2{
-        display: none;
-        
-    }
-
 .contenedor-secundario{
     grid-area: area2;
     background-color: transparent;
@@ -132,7 +63,7 @@
         width: 95%;
         margin: 10px auto 20px;
         text-align: left;
-        font-size: 18px;
+        font-size: 16px;
     }
     .flex{
         display: flex;
@@ -156,7 +87,7 @@
         width: 95%;
         margin: 10px auto 20px;
         text-align: left;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .div3{
@@ -167,7 +98,7 @@
         width: 95%;
         margin: 10px auto 0px;
         text-align: left;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .div4{
@@ -178,7 +109,7 @@
         width: 95%;
         margin: 10px auto 0px;
         text-align: left;
-        font-size: 17px;
+        font-size: 16px;
     }
     
     label{
@@ -198,9 +129,10 @@
         text-align: center;
     }
     .titulo{
-        font-size: 50px;
+        font-size: 60px;
         text-align: center;
         color: #d1d7e0;
+        font-family: monserrat_bold !important;
     }
     .botones{
         width: 60%;
@@ -226,6 +158,33 @@
         font-size: 16px;
     }
    
+@media (max-width: 1500px){
+    *{
+        font-size: 14px;
+    }
+    .img-secun-refe{
+        width: 100%;
+        margin: 10px auto -140px;
+        text-align: center;
+    }
+    .titulo{
+        font-size: 55px;
+    }
+    form{
+        padding: 10px 15px;
+    }
+    .derecha{
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+    .botones{
+        width: 60%;
+        margin: 10px auto 0px;
+    }
+    .div1{
+        margin: 0px auto 20px;
+    }
+}
     /*
     @media (max-width: 750px) {
         
@@ -247,151 +206,3 @@
         
     }
     */
-
-@media(max-width: 450px){
-    form{
-        display: grid;
-        margin: 100px auto 0px;
-    }
-
-    .contenedor-general{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        height: 100vh;
-        width: 110vw;
-        grid-template-areas:
-        "area1"
-        "area2"; 
-    }   
-    .contenedor-central{
-        grid-area: area1;
-        /*grid-column: 2/4;*/
-        background-color: transparent;
-        position: relative;
-        height: 80vh;
-    }
-
-    #img-bo{
-        display: none;
-    }
-
-    .img-borde-sup{
-        width: 50%;
-        position:absolute; 
-        top:0; 
-        right: 0;
-        z-index: 1;
-
-    }
-    #img-su{
-        width: 100%;
-        display: block;
-    }
-
-    #img-su2{
-        display: none;
-    }
-
-    #img-bo2{
-        width: 100%;
-        display: block;
-        
-    }
-
-
-    .img-secun-refe {
-        width: 60%;
-        margin-top: 0px;
-    }
-
-    .div1{
-        display: grid;
-        grid-template-columns: repeat(7,1fr);
-        row-gap: 10px;
-        width: 100%;
-        grid-template-areas:
-        ". rs1 rs1 . . . ."
-        ". rs2 rs2 . . . ."
-        ". . . . rs3 rs3 rs3";
-    }
-
-    .respon-1{
-       grid-area: rs1;
-    }
-
-    .respon-2{
-        grid-area: rs2;
-    }
-
-    .respon-3{
-        grid-area: rs3;
-    }
-
-    #otro_1{
-        width: 100%;
-    }
-
-    .div2{
-        grid-template-columns: repeat(7,1fr);
-        row-gap: 10px;
-        width: 100%;
-        grid-template-areas:
-        ". area7 area7 . . . ."
-        ". area8 area8 . area9 area9 ."
-        ". area10 area10 . area11 area11 .";
-    }
-
-    #dni_re{
-        width: 100%;
-    }
-
-    #celu_re{
-        width: 100%
-    }
-
-    .div3{
-        grid-template-columns: repeat(6,1fr);
-        row-gap: 10px;
-        width: 100%;
-        grid-template-areas:
-        ". rs4 rs4 rs4 rs4 ."
-        ". rs5 rs5 rs5 rs5 .";
-    }
-
-    .respon-4{
-        grid-area: rs4;
-    }
-
-    .respon-5{
-        grid-area: rs5;
-    }
-
-    #corre_re{
-        width: 100%;
-    }
-
-    .div4{
-        display: grid;
-        grid-template-columns: repeat(10,1fr);
-        row-gap: 10px;
-        width: 100%;
-        grid-template-areas:
-        ". rs6 rs7 rs7 rs7 rs7 rs8 rs8 . .";
-        margin-bottom: 50px;
-    }
-
-    .titu6{
-        grid-area: rs6;
-        z-index: 2;
-    }
-
-    .titu7{
-        grid-area: rs7;
-    }
-
-    .titu8{
-        grid-area: rs8;
-       
-    }
-
-}

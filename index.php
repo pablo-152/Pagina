@@ -91,9 +91,6 @@
                         <label class="negrita">Correo:</label><label class="">ejemplo@google.com</label>
                     </div>
                 </div>
-                <div class="img-borde-inf">
-                    <img src="img/cuadros abajo-01.png" id="img-bo2">
-                </div>
             </form>
             <div class="botones">
                 <button type="button" class="btn1">No soy su apoderado</button>
